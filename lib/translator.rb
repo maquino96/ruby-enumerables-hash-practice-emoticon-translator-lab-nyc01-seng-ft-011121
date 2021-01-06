@@ -2,6 +2,7 @@
 
 require "yaml"
 
+<<<<<<< HEAD
 def load_library(path)
   yaml_hash = YAML.load_file(path)
   lib_hash = {}
@@ -11,6 +12,34 @@ def load_library(path)
                         :japanese => o_val[1]}
   end
   lib_hash
+=======
+test_hash = YAML.load_file('lib/emoticons.yml')
+
+yaml_hash = { 
+  "angel"=>["O:)", "☜(⌒▽⌒)☞"], 
+  "angry"=>[">:(", "ヽ(ｏ`皿′ｏ)ﾉ"], 
+  "bored"=>[":O", "(ΘεΘ;)"], 
+  "confused"=>["%)", "(゜.゜)"], 
+  "embarrassed"=>[":$", "(#^.^#)"], 
+  "fish"=>["><>", ">゜))))彡"], 
+  "glasses"=>["8D", "(^0_0^)"], 
+  "grinning"=>["=D", "(￣ー￣)"], 
+  "happy"=>[":)", "(＾ｖ＾)"], 
+  "kiss"=>[":*", "(*^3^)/~☆"], 
+  "sad"=>[":'(", "(Ｔ▽Ｔ)"], 
+  "surprised"=>[":o", "o_O"], 
+  "wink"=>[";)", "(^_-)"]
+    }
+
+
+
+puts test_hash
+
+def load_library
+  # code goes here
+  
+  
+>>>>>>> ade6037226802bf80b6687fba8bc894385f425a1
 end
 
 
